@@ -1,0 +1,102 @@
+\documentclass[a4paper,11pt]{letter}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{geometry}
+\usepackage{upgreek}
+\usepackage{siunitx}
+
+\newcommand{\mum}{\ensuremath{\upmu \mbox{m}}}
+\newcommand{\nm}{\ensuremath{\mbox{nm}}}
+
+\geometry{a4paper,textwidth=15cm,textheight=20cm}
+\def\baselinestretch{1.2}
+\signature{Ni Chen, Jae-Hyeung Park and Nam Kim}
+\pagestyle{empty}
+
+\begin{document}
+\begin{letter}{Optics Express editorial office}
+
+\opening{Dear Editor,}
+\begin{center}
+{\bf \underline{Author's reply to the reviewers' comments} } \\
+\end{center}
+(``Parameter analysis of integral Fourier hologram and its resolution enhancement'', manuscript ID: 120397)
+
+Authors appreciate reviewer's constructive comments. We revised the manuscript following the suggestions. We also corrected the style following the guideline. (The original comments of the reviewers are written in italic).
+
+{\noindent {\bf Comments of Reviewer 1:}}
+
+\textit{The paper presents parameter considerations for generating Fourier holograms using lens arrays. The experimental and simulation results support the theory. Here are my remarks:}
+
+\begin{enumerate}
+
+\item \textit{I think the authors should add an analysis on the axial (z) resolution and how it is affected by the different parameters.}
+
+\bigskip
+\textbf{Answer:}
+The axial resolution of the generated holography is determined by two factors: (1) the depth of focus (DOF) in the hologram reconstruction process, and (2) axial resolution of the capture process using a lens array. 
+The DOF of the hologram reconstruction is fundamentally limited by hologram’s numerical aperture (NA), i.e. usually $DOF=\lambda/NA^2$. Note that the numerical aperture of the holography is determined by $NA=u_{max}/f=Ms_{max}/f=2\theta_{max}$ in the hologram generation method using a lens array. Hence the max is the main parameter determining the DOF of the generated holography. (see Fig. 1). 
+The axial resolution of the capture process using the lens array can be defined by minimum axial shift of the object that causes barely detectable change in the captured orthographic images. From Fig. 1, it can be seen that, for a given orthographic image which corresponds to a projection angle $\theta=s/l$, the barely detectable axial shift is given by $\Delta z_s=\Delta x_p/\tan\theta=\Delta x_p l/s$. Since all the orthographic images contribute to the synthesis of the holography, the minimum axial shift of the object that changes the synthesized holography is given by $\Delta z=\Delta x_p/\tan\theta_{max}=\Delta x_p l/s_{max}$. 
+From above two factors, we can have rough estimation of the axial resolution of the generated holography. Deferring exact full analysis and its experimental verification for further research, in this paper we prefer to add following paragraphs to clarify factors affecting the axial resolution.
+ 
+Following sentences are added in the paragraph below Fig. 1
+
+“Since only one pixel is extracted from each element image, the spatial sampling interval or the effective pixel pitch of the orthographic view image is given by the element lens pitch $\Delta x_p$.”
+ 
+Following paragraph is inserted at the end of sub-section 2.1. 
+“Note that, besides the maximum size and the spatial resolution of the reconstruction which will be discussed in the following sections, the axial resolution is also limited by the discrete nature of the captured orthographic images and the finite size of the generated hologram. The finite size of the generated hologram determines the numerical aperture (NA) which fundamentally restricts the depth of focus of the hologram. Since the NA of the hologram is given by $NA=L_u/f=Ms_{max}/f=2\theta_{max}$ in the integral Fourier hologram generation method using a lens array, the $\theta_{max}$ is the main parameter determining the depth of focus of the generated hologram. On the other hand, the discrete nature of the orthographic image determines minimum axial shift of the object that causes barely detectable change in the captured orthographic images. From Fig. 1, it can be seen that, for a given orthographic image which corresponds to a projection angle $=s/l$, the barely detectable axial shift of the object is given by $\Delta z_s=\Delta x_p/tan\theta=\Delta x_p l/s$. Since all the orthographic images contribute to the synthesis of the holography, the minimum axial shift of the object that changes the synthesized holography is given by $\Delta z=\Delta x_p/\tan\theta_{max}=\Delta x_p l/s_{max}$. Hence from above two factors, the axial resolution can be roughly estimated. ”
+
+
+\item \textit{To capture more elemental images, the authors shift the lens array over half of the lens pitch. This is mechanical movement, and errors might occur. The authors should add an analysis of the expected error and under what level it has to be in order not to affect the results (how is it connected to the other parameters in the analysis?)}
+
+\bigskip
+\textbf{Answer:}
+Thank you for the comment. We added following paragraph below the second paragraph in sub-section 3.2.
+“In the experiment, the mechanical movement of the lens array may cause position errors in the lens array shift. Since the object is sampled at each elemental lens position in the orthographic image capture process, the position error of the lens array shift leads to non-uniform sampling of the object, i.e. the effective sampling interval is not a constant Δxp/2 but fluctuates, which degrades final reconstruction quality by acting as broadband noise. 
+In our experiment, the minimum unit of the translate stage was 0.01 mm, which limits the maximum error of the lens array shifting under 0.01mm. This maximum error 0.01mm corresponds to sub-pixel shift, or 0.5 pixel shift, in terms of the captured elemental image pixel with our experimental setup (i.e. $\Delta x_p=1mm$, pixel count of each element image =50). Consequently, the error caused by the mechanical movement of the lens array could be ignored in our experiment.”
+
+
+\item \textit{From Fig. 16, I learn that the lenses in the array are not positioned in rectangular (lines/columns) shape, but rather in hexagonal shape. However, the matrix of the hologram is rectangular. How do you solve this problem? Do you use interpolations of middle points? How does it affect your results?}
+
+\bigskip
+\textbf{Answer:} 
+The lenses in the array used in the experiment are not in hexagonal shape but in rectangular shape. Hence we didn’t use interpolations of middle points. In order to reveal this more clearly, we corrected Fig.1, Fig.9 (a) and Fig.15. We also modified Fig. 16 by adding element images. In Fig. 16, it can be seen that the element images captured by using rectangular lens array are rectangular, and the orthographic images which are generated from the elemental images are also rectangular.
+
+\end{enumerate}
+
+
+{\noindent {\bf Style corrections}}
+
+\begin{enumerate}
+
+\item \textit{Main text: In the section and sub-section headings, use an initial capital letter followed by lowercase, except for proper names, abbreviations, etc.}
+
+\bigskip
+\textbf{Answer:}
+The section heading “3. Simulation and Experiment results” is modified to “3. Simulation and experiment results”
+
+
+\item \textit{Figures: Authors must use one image file per figure. Please use one image file for the figures with more than one part (ie: incorporate part a and b into one image file instead of two). Also, please add the letter label (a, b, c ect.) into the image file. This will help us prepare your manuscript for publication producing full-text XML.}
+
+\bigskip
+\textbf{Answer:}
+The Fig.9, Fig.11, Fig.12, Fig.13, Fig.14, Fig.16, Fig.17, Fig.18, Fig.19, Fig.20 are modified as one image file per figure.
+
+
+\item \textit{Please ensure that all references, figures, tables, and equations are called out in the text. [Standard comment. Please disregard if you have done this].}
+
+\bigskip
+\textbf{Answer:} 
+Checked according to the guideline. 
+\end{enumerate}
+
+
+THANK YOU.
+
+\vskip 2mm
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
