@@ -25,8 +25,8 @@ the resolution of the resulting hologram.
 
 ## Resources
 
-- [Source code](https://github.com/Ni-Chen/LF-based-Synthetic-Holography/tree/main/code)
-- [Research papers](https://github.com/Ni-Chen/LF-based-Synthetic-Holography/tree/main/papers)
+- [Source code](https://github.com/Ni-Chen/LF-based-Synthetic-Holography/tree/master/code)
+- [Research papers](https://github.com/Ni-Chen/LF-based-Synthetic-Holography/tree/master/papers)
 - [Project repository](https://github.com/Ni-Chen/LF-based-Synthetic-Holography)
 
 ## References
