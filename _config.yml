@@ -1,0 +1,22 @@
+title: Integral Imaging-Based Synthetic Holography
+description: Research, methods, and resources for light-field-based synthetic holography.
+url: https://ni-chen.github.io
+baseurl: /LF-based-Synthetic-Holography
+
+theme: jekyll-theme-neysa
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
+  auto_ids: true
+  toc_levels: 2..6
+
+exclude:
+  - code
+  - papers
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
