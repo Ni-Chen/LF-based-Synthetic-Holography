@@ -218,6 +218,15 @@ def main():
     ):
         if value <= 0:
             parser.error(f"{label} must be positive.")
+    if args.depth_stop < args.depth_start:
+        parser.error("depth-stop must not be less than depth-start.")
+    if min(
+        args.invalid_left,
+        args.invalid_right,
+        args.invalid_up,
+        args.invalid_down,
+    ) < 0:
+        parser.error("invalid-view clipping values must be nonnegative.")
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     mosaic = synthesize_elemental_image(args.input_dir, args.name, args.element_size)
