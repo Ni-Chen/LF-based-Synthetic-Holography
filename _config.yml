@@ -3,7 +3,7 @@ description: Research, methods, and resources for light-field-based synthetic ho
 url: https://ni-chen.github.io
 baseurl: /LF-based-Synthetic-Holography
 
-theme: jekyll-theme-neysa
+theme: jekyll-theme-cayman
 
 markdown: kramdown
 kramdown:
