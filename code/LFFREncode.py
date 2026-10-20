@@ -118,7 +118,7 @@ def generate_fourier_cgh(
     s_grid = s_values.reshape(1, num_s, 1, 1)
     b = -2 / (wavelength * lens_focal_length)
 
-    projections = projections.to(device=device, dtype=torch.float64)
+    projections = projections.to(device=device, dtype=torch.float32)
     cgh = torch.empty((num_t, num_s), dtype=torch.complex128, device=device)
     for start in range(0, num_t, row_chunk_size):
         end = min(start + row_chunk_size, num_t)
