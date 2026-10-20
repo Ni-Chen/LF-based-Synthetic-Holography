@@ -8,6 +8,24 @@
 
 ## Resolution enhancement
 
+A PyTorch version of the elemental-image synthesis and Fourier hologram pipeline
+is available in [`code/LFFREncode.py`](code/LFFREncode.py). It expects four
+preprocessed images named `<name>_eleImg_11.jpg`, `_12.jpg`, `_21.jpg`, and
+`_22.jpg` in the input directory. For example, the repository's existing `foot`
+intermediate images can be processed from the repository root with:
+
+```bash
+pip install "torch>=2.7.1" "Pillow>=12.3.0"
+python code/LFFREncode.py
+```
+
+The script writes the synthesized elemental image, sub-image mosaic, complex
+hologram data (`.pt`), real/imaginary hologram previews, and depth
+reconstructions to `code/output/`. Use `--help` to see options for input paths,
+optical parameters, view clipping, and compute device. Defaults match the
+`foot` MATLAB parameter file. The MATLAB preprocessing scripts remain necessary
+when starting from the original captured photographs rather than the
+preprocessed intermediate images.
 
 
 A set of captured elemental images
